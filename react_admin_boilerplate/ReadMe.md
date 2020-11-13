@@ -36,18 +36,7 @@ How to Run it
 
 On Successfull Compilation this is what appears on terminal screen
 --------
- i ｢wds｣: Project is running at http://192.168.56.1/
-[1] i ｢wds｣: webpack output is served from
-[1] i ｢wds｣: Content not from webpack is served from C:\Users\devsu\Desktop\newProject\react_admin_boilerplate\client\public
-[1] i ｢wds｣: 404s will fallback to /
-[1] Starting the development server...
-[1]
-[1] Compiled successfully!
-[1]
-[1] You can now view client in the browser.
-[1]
-[1]   Local:            http://localhost:3000
-[1]   On Your Network:  http://192.168.56.1:3000
+<img src="https://user-images.githubusercontent.com/67728575/99048738-f2f22680-25bb-11eb-8865-20b6ef7d2082.png">
 
 
 -you will be automatically navigated to the browser window wait for 2 more min and then as the page loads up you are good to go.
