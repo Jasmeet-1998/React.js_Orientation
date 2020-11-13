@@ -1,0 +1,17 @@
+{
+  "name": "react_admin_boilerplate",
+  "version": "1.0.0",
+  "description": "Using react_admin frontend liberary and material UI",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Jasmeet Singh Bali",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.2"
+  }
+}

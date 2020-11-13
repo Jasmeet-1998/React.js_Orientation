@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "title": "Post Edited Succesfully",
+      "body": "Update Operation Achieved.",
+      "publishedAt": "2020-11-03",
+      "id": "vJ0grOH"
+    },
+    {
+      "title": "New Post Created",
+      "body": "Create Operation Achieved",
+      "publishedAt": "2020-11-02",
+      "id": "h4xlCiO"
+    },
+    {
+      "title": "Post Deleted Succesfully",
+      "body": "Delete Operation Achieved",
+      "publishedAt": "2020-11-04",
+      "id": "URdlZCp"
+    },
+    {
+      "title": "Fetch all data",
+      "body": "Read Operation Achieved",
+      "publishedAt": "2020-11-01",
+      "id": "5ES3SRD"
+    },
+    {
+      "title": "Transfer Post as CSV",
+      "body": "Export Data In CSV format",
+      "publishedAt": "2020-11-05",
+      "id": "iTIFQVo"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Wick",
+      "email": "kutekeMautkabadla@gmail.com"
+    },
+    {
+      "name": "Pablo Escobar",
+      "email": "Pablino@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Henry",
+      "email": "Henck.noobie@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Anonymous",
+      "email": "wsup@googlesucks.com",
+      "id": 4
+    }
+  ]
+}
