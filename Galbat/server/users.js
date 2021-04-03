@@ -2,7 +2,7 @@
 const users=[];
 
 const addUser=({id,name,room})=>{
-  //Javascript Mastery=javascriptmastery
+  
 
   name=name.trim().toLowerCase();//remove widespaces
   room=room.trim().toLowerCase();

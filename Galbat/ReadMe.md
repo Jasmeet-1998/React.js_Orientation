@@ -1,8 +1,13 @@
 Author-Jasmeet Singh Bali
 ##GalBat(chat)
 
-TIMESTAMP->121
-Fix the chat box issue first.
+TIMESTAMP->146 to do deploy
+Version 1 implemented fully No authentication yet.
+
+Need to Deploy first version 1.
+
+then Work on Version 2 with authentication
+
 
 ##Major Packages Used Here -
 

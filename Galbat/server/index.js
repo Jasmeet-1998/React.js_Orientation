@@ -38,29 +38,40 @@ io.on('connection',(socket)=>{
      }
     //callback can be used for error handling.
 
+    //joins a user to the room. .join(roomname to join)
+    socket.join(user.room);
+
     //an event to show welcome message when user joins room without any error .emit()
     socket.emit('message',{user:'admin',text:`${user.name},welcome to the room ${user.room}`});
     //.broadcast() to broadcast a message to all other user in the room beside the current user who just joined.
     socket.broadcast.to(user.room).emit('message',{user:'admin',text:`${user.name}, has joined!`});
-    //joins a user to the room. .join(roomname to join)
-    socket.join(user.room);
+
+
+    //to determine the users already in the room
+    io.to(user.room).emit('roomData',{room:user.room,users:getUsersInRoom(user.room)});
 
     //call the callback function for error detection
     callback();
 
   });
 
-  //frontend to send the message
+  //frontend to send the message & the roomdata.
   socket.on('sendMessage',(message,callback)=>{
     const user=getUser(socket.id);
 
     io.to(user.room).emit('message',{user:user.name,text:message});
+    io.to(user.room).emit('roomData',{room:user.room,users:getUsersInRoom(user.room)});
 
     callback();
   });
 
   socket.on('disconnect',()=>{
-    console.log('User has Left!!');
+    const user=removeUser(socket.id);
+
+    if(user){
+      io.to(user.room).emit('message',{user:'Admin',text:`${user.name} has left.`});
+      io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
+    }
   })
 });
 
