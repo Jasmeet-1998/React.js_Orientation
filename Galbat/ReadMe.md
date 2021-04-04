@@ -2,9 +2,9 @@ Author-Jasmeet Singh Bali
 ##GalBat(chat)
 
 TIMESTAMP->146 to do deploy
-Version 1 implemented fully No authentication yet.
-
-Need to Deploy first version 1.
+Version 1 : No Auth yet But Basic Functionality Implemented and Deployed
+Backend(Node.js)->heroku
+frontend(React)->Netlify
 
 then Work on Version 2 with authentication
 
