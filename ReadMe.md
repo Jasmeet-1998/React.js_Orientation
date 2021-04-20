@@ -44,7 +44,9 @@
    It is responsible for storing state in the functional component.
    example const [count,setCount]=useState(0);
 
-   in class based component in the constructor this works differently in different languages like java, javascript, ruby on rails.   
+   in class based component in the constructor ****this (used to refer the instance of the class object)****
+
+   works differently in different languages like java, javascript, ruby on rails.   
 
 ****Components****
 
