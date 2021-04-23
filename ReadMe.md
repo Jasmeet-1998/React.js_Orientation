@@ -1,5 +1,7 @@
 # React JS Crash Course
 
+****Refer App.js in the src directory of TASK_MANAGER FOLDER****
+
 ****Level: Beginner****
 
 - React is a open source Front-end development library basically used to develop UI / UX Components.
@@ -59,4 +61,4 @@ Class Based and Functional Based component.
 - this root can be found in the public directory ---> index.html file of the create-react-app project folder , in this case the basictodo ----> public ----> index.html
 
 # For Code , Syntax and Basics
- ****Refer App.js in the src directory****
+ 
