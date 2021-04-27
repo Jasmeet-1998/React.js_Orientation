@@ -1,6 +1,6 @@
 ****React Basics Level 2****
 
-5150 timestamp
+11930 timestamp
 ## Full stack backend(mock-json-server) with React UI
 
 By- Jasmeet
@@ -104,6 +104,13 @@ now we can use functional components with hooks.****
 
 
 ***
+
+# React only changes the UI what the user sees .
+
+- ****Suppose you are making an application task manager and their you want to remove the tasks as we click on delete button now we can do that just by filtering out and recreating the entire state of the task component and displaying all the tasks just filtering out the one task on which we clicked to delete.****
+
+- ****However when we reload that delete task / basically disappeared task from the UI will come back so to actually make changes and make a meaningfull stack we need a backend.****
+
 
 
 

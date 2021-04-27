@@ -10,18 +10,18 @@ import Button from './Button';
 
 // Destructring params to accept props for the Header function/component and no longer need to do props.title just {title} inside the funcitonal component in h1 will work
 //const Header=(props)
-const Header=({title})=> {
+const Header=({title,onAdd,showAdd})=> {
 
-  const onClick=(e)=>{
-    console.log(e);
-    console.log("Clicked");
-  }
+  // const onClick=(e)=>{
+  //   console.log(e);
+  //   console.log("Clicked");
+  // }
 
   return (
     <header className='header'>
        <h1>{title}</h1> {/*<h1>props.title</h1>*/}
        {/*Inline styling <h1 style={{color:'purple',backgroundColor:'black'}}>*/}
-       <Button color='green' text='New' onClick={onClick}/>
+       <Button color={showAdd?'red':'green'} text={showAdd?' Nah!':'New task'} onClick={onAdd} />
     </header>
   );
 }

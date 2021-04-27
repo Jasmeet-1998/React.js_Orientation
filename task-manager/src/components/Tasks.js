@@ -42,7 +42,7 @@ import Task from './Task';//importing single task
 // }
 
 
-const Tasks=({tasks})=> {
+const Tasks=({tasks, onDelete,onToggle})=> {
   // using useState with default value with array as three task initially
   // const [tasks,setTasks]=useState([
   //    {
@@ -73,7 +73,10 @@ const Tasks=({tasks})=> {
        tasks.map(
          (task)=>
          {
-           return <Task key={task.id} task={task}/>
+           return <Task key={task.id}
+            task={task}
+            onDelete={onDelete}
+            onToggle={onToggle}/>
          }
 
      )}
