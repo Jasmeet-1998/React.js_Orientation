@@ -112,9 +112,12 @@ now we can use functional components with hooks.****
 - ****However when we reload that delete task / basically disappeared task from the UI will come back so to actually make changes and make a meaningfull stack we need a backend.****
 
 
+# Building Your build that gets deploy to production if your final goal is to deploy the application
+
+### npm run build or yarn build
 
 
-
+- A Folder Build Will Be made and this will be deployed when we actually deploy our application.
 
 
 ****==============================Intro Ends Here===============================****
