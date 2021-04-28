@@ -1,6 +1,6 @@
 ****React Basics Level 2****
 
-11930 timestamp
+12200 timestamp
 ## Full stack backend(mock-json-server) with React UI
 
 By- Jasmeet
@@ -112,13 +112,22 @@ now we can use functional components with hooks.****
 - ****However when we reload that delete task / basically disappeared task from the UI will come back so to actually make changes and make a meaningfull stack we need a backend.****
 
 
+***
+
 # Building Your build that gets deploy to production if your final goal is to deploy the application
 
 ### npm run build or yarn build
 
 
-- A Folder Build Will Be made and this will be deployed when we actually deploy our application.
+- ****A Folder Build Will Be made and this will be deployed when we actually deploy our application.****
 
+- ****to serve the build we globally install npm i -g serve****
+
+- ****serve provides a basic http server****
+
+- ****serve -s build -p 8000 will serve the build folder and will run the react app on localhost://8000****
+
+- ****so only the build folder is actually deployed rest all can be deleted.****
 
 ****==============================Intro Ends Here===============================****
 ***
