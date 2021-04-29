@@ -6,11 +6,16 @@ import PropTypes from 'prop-types';
 // Inline
 // Note styling if inline then use double curly braces {{color:'purple'}}
 
+import {useLocation} from 'react-router-dom';
+//allows to look at the route we currently on
+
 import Button from './Button';
 
 // Destructring params to accept props for the Header function/component and no longer need to do props.title just {title} inside the funcitonal component in h1 will work
 //const Header=(props)
 const Header=({title,onAdd,showAdd})=> {
+
+  const location = useLocation();
 
   // const onClick=(e)=>{
   //   console.log(e);
@@ -21,7 +26,8 @@ const Header=({title,onAdd,showAdd})=> {
     <header className='header'>
        <h1>{title}</h1> {/*<h1>props.title</h1>*/}
        {/*Inline styling <h1 style={{color:'purple',backgroundColor:'black'}}>*/}
-       <Button color={showAdd?'red':'green'} text={showAdd?' Nah!':'New task'} onClick={onAdd} />
+       {location.pathname==='/' && <Button color={showAdd?'red':'green'} text={showAdd?' Nah!':'New task'} onClick={onAdd} />}
+       {/*the new task button only appears when we are on the home route i.e where we see all the task*/}
     </header>
   );
 }

@@ -1,11 +1,24 @@
 ****React Basics Level 2****
 
-12200 timestamp
 ## Full stack backend(mock-json-server) with React UI
 
 By- Jasmeet
 
 ****Level: Intermediate****
+
+## Topics Covered :
+
+#### - React Basics , Writing React Function Components
+
+#### - React Components Loading and unloading
+
+#### - React Passing Actions as props from child components to parent components
+
+#### - Interaction and presisting Data between Backend Server/REST server(database) and Frontend Server(React).
+
+#### - React Routing with react-router-dom
+
+
 
 ### Prerequisite:
 - Javascript
@@ -129,7 +142,48 @@ now we can use functional components with hooks.****
 
 - ****so only the build folder is actually deployed rest all can be deleted.****
 
-****==============================Intro Ends Here===============================****
+***
+
+# JSON-server create MOCK API for your Data
+
+             npm i json-server
+
+****Add a new script in the package.json as server****             
+
+             json-server --watch db.json --port 5000
+             npm run server // to start the backend mock json-server
+             npm start  // in different terminal
+
+- ****Note json server creates ID on its own****
+- ****edit db.json a/v to the data u want to display at the frontend****
+
+***
+
+# Fetching data from backend to frontend
+
+****if you named your nested object array as say tasks then you will get back that db.json as json in response. refer App.js Add,Delete,toggle task function part to see how to presist data between backend and frontend with fetch****
+
+             go to http://localhost:5000/tasks
+
+***
+
+# Routing , footer and about in React
+
+            npm i react-router-dom
+
+- ****React , react-router-dom A tool that allows you to handle routes in a web app, using dynamic routing. Dynamic routing takes place as the app is rendering on your machine, unlike the old routing architecture where the routing is handled in a configuration outside of a running app.****
+
+- ****IMPORTANT Note while using router in the App. js return everything must be wrapped in the BrowserRouter****
+
+- ****Important: To route to different components without the ugly loading use Link of the react-router-dom see the About and Footer.js in components with ***<*Link to='/route'></Link*>********
+
+- ****IMPORTANT: import {useLocation} from 'react-router-dom'allows to look at the route we currently on refer Header.js in components****
+
+               const location = useLocation();
+               location.pathname // will give the path of routes. refer Header.js where we only show button new when in / route not in /about.
+
+
+****======================================Tutorial Ends Here===========================================================****
 ***
 ***
 
