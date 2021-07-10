@@ -1,0 +1,12 @@
+.App{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.navbar{
+  list-style-type: none;
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+}
